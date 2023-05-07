@@ -27,8 +27,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full navigatetion-wrap bg-white">
-      <nav className="z-10 lg:w-[1340px] xl:w-[1340px] px-[20px] mx-auto relative flex flex-wrap items-center justify-between mx-auto lg:justify-between xl:px-0">
+    <div className="w-full bg-white fixed top-0 left-0 right-0 z-20">
+      <nav className="md:px-24 lg:px-36 bg-white flex flex-wrap items-center justify-between mx-auto lg:justify-between">
         <Disclosure>
           {({ open }) => (
             <>
@@ -39,7 +39,7 @@ const Navbar = () => {
                       <img
                         src="/img/gweelogo.jpg"
                         alt="logo"
-                        className="h-24"
+                        className="h-20"
                       />
                     </span>
                   </span>
@@ -76,7 +76,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.url}
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none text-pink-500"
                       >
                         {item.label}
                       </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={menu.url}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className="text-pink-500 inline-block px-4 py-2 font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {menu.label}
                 </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               Get Started
           </Link> */}
 
-          <ThemeChanger />
+          {/* <ThemeChanger /> */}
         </div>
       </nav>
     </div>

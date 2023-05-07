@@ -1,45 +1,47 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 
 const AboutComponents = () => {
   return (
-    <>
-      <div className="h-46 bg-[#e4e2d8]">
-        <div className="flex flex-wrap lg:w-[1340px] xl:w-[1340px] px-[20px] mx-auto">
-          <div className="flex items-center w-full">
-            <div className="max-w-2xl mb-8 pt-20">
-              <h1 className="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
-                About us
-              </h1>
-              <p className="py-5 text-xl text-gray-500">
-                Find out more about Global Women Education and Empowerment: our
-                vision, mission, organisational structure and ways of working.
-              </p>
-            </div>
+    <div className="">
+      <div className="bg-[#e4e2d8] mt-12 relative">
+        <div
+          className="absolute inset-0 bg-opacity-50 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://res.cloudinary.com/dtuesm5ex/image/upload/v1683390709/GWEE/IMG-20230501-WA0027_jdxaul.jpg')" }}
+        ></div>
+
+        <div className="mb-8 py-36 relative z-10 bg-black bg-opacity-30">
+          <div className="max-w-5xl md:px-24 lg:px-36">
+            <h1 className="text-white font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
+              About us
+            </h1>
+            <p className="py-5 text-xl text-gray-500 text-white">
+              Find out more about Global Women Education and Empowerment: our
+              vision, mission, organisational structure and ways of working.
+            </p>
           </div>
         </div>
       </div>
-      <div className="lg:w-[1340px] xl:w-[1340px] px-[20px] mx-auto">
+      <div className="md:px-24 lg:px-36 mx-auto z-10">
         <div className="flex flex-col w-full h-full bg-white rounded-2xl pt-14">
-          <p className="text-2xl">Our mission</p>
+          <p className="text-2xl">Mission</p>
           <p className="mb-4">
             A world where all girls and women are educated and empowered for
             social and economic development and sustainability.
           </p>
         </div>
         <div className="flex flex-col w-full h-full bg-white rounded-2xl">
-          <p className="text-2xl">Our vision</p>
+          <p className="text-2xl">Vision</p>
           <p className="mb-4">
             Supporting girls and women’s personal, and professional, growth
             through education, training and empowerment
           </p>
         </div>
         <div className="flex flex-col w-full h-full bg-white rounded-2xl">
-          <p className="text-2xl">Our core values </p>
+          <p className="text-2xl">Core values </p>
           <p className="mb-4">Equality, Equity, Justice, Empowerment</p>
         </div>
         <div className="flex flex-col w-full h-full bg-white rounded-2xl max-w-4xl">
-          <p className="text-2xl">Our partners </p>
+          <p className="text-2xl">Partners </p>
           <p className="mb-4">
             We partner with other organizations for significant and long term
             impact. We build on existing structures in society to reach the
@@ -145,7 +147,7 @@ const AboutComponents = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

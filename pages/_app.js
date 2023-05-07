@@ -1,13 +1,14 @@
 import { ThemeProvider } from "next-themes";
 import "../css/tailwind.css";
 import { Inter } from "next/font/google";
+import Layout from "../components/Layout";
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className={inter.className}>
+    <Layout className={inter.className}>
       <Component {...pageProps} />
-    </main>
+    </Layout>
   );
 }
 
